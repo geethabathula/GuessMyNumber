@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessMyNumber</title>
+    <!-- Adding this to avoid favicon.ico error  -->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Title Section -->
+      <div class="title">
+        <h1 class="title-header-1">Guess My Number</h1>
+        <h6 class="title-header-6">Between 1 to 10</h6>
+        <div class="number-box">?</div>
+      </div>
+    </header>
+    <section>
+      <p class="section-message">Start Guessing...</p>
+      <div class="section-input">
+        <input class="section-number" type="number" />
+      </div>
+      <div class="section-buttons">
+        <button class="section-button" type="submit">Check!</button>
+        <button class="section-button section-replay-button" type="submit">
+          Replay
+        </button>
+      </div>
+    </section>
+    <!-- External JS -->
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
