@@ -1,5 +1,5 @@
 //Guess Number Game
-// Working Version-1.0
+// Working Version-2.0
 let getNumberBox = document.querySelector('#number-box');
 let getGuessCount = document.querySelector('.guess-count');
 let getSectionMessage = document.querySelector('.section-message');
@@ -8,7 +8,7 @@ let getSectionGuessCount = document.querySelector('.section-guess-count');
 
 let countGuess = 3;
 let randomNum = Math.floor(Math.random() * 10) + 1;
-console.log("RandomNum", randomNum);
+
 let attempt = 0;
 
 const displayMessage = function (message) {
@@ -28,7 +28,6 @@ function guessGame() {
     attempt++;
 
     if (usrInput === randomNum) {
-        console.log("Hurray... You won");
         displayMessage(`Hurray...🤩 You won in ${attempt} attempt/s.`);
         getSectionMessage.style.color = 'var(--win-color)';
         getNumberBox.textContent = randomNum;
@@ -42,8 +41,6 @@ function guessGame() {
 
 
         if (countGuess === 0) {
-            console.log("Sorry you ran out of Guesses. Better Luck Next Time");
-            console.log("The Number is : ", randomNum);
             displayMessage(`Sorry🙁 you ran out of Guesses. Better Luck Next Time`);
             getSectionMessage.style.color = 'var(--lost-color)';
             getNumberBox.textContent = randomNum;
