@@ -20,7 +20,7 @@ document.querySelector('.section-check-button').addEventListener('click', guessG
 //Game Functionality
 function guessGame() {
     let usrInput = Number(document.querySelector('.section-number').value);
-    console.log(usrInput);
+
     if (usrInput === 0) {
         displayMessage(`⛔️ Please Enter a number`);
         return;
