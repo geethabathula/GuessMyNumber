@@ -18,6 +18,9 @@
 
 body {
   background-color: var(--backdrop-color);
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 /* h1 {
   text-align: right;
@@ -79,6 +82,10 @@ header {
   margin-bottom: 60px;
 }
 
+.guess-count {
+  color: var(--count-color);
+}
+
 .section-guess-count {
   float: right;
   margin-right: 20%;
@@ -111,19 +118,22 @@ header {
 }
 
 .section-button {
-  margin-top: 30px;
+  margin-top: 25px;
   height: 50px;
   width: 130px;
 }
+
+.section-clear-button {
+  margin-top: 2px;
+}
+
 /* Footer */
 footer {
   width: 100%;
   text-align: center;
   background-color: rgba(41, 43, 43, 0.155);
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: sticky;
+  top: 100%;
   padding: 25px;
 }
 
